@@ -1,0 +1,64 @@
+.main {
+	display: flex;
+	@media only screen and (width>=500px) {
+		width: 430px;
+		flex: 2 0 auto;
+	}
+
+	@media only screen and (width>=688px) {
+		width: 600px;
+		flex: 2 0 auto;
+	}
+
+	@media only screen and (width>=988px) {
+		width: 920px;
+		flex: 1 0 auto;
+	}
+
+	@media screen and (width>=1078px) {
+		width: 990px;
+		flex: 1 0 auto;
+	}
+
+	@media screen and (width>=1265px) {
+		width: 990px;
+		flex: 1 0 auto;
+	}
+}
+.main_primary-container {
+	width: 100%;
+	position: relative;
+	top: -0.5px;
+	display: flex;
+	flex-direction: column;
+	//z-index: 1;
+	border-bottom: var(--main-border-style);
+
+	@media only screen and (width>=500px) {
+		flex-basis: 0 1 auto;
+		width: 472px;
+		height: max-content;
+		position: sticky;
+		top: unset !important;
+		box-sizing: border-box;
+		border-left: var(--main-border-style);
+		border-right: var(--main-border-style);
+	}
+
+	@media only screen and (width>=600px) {
+		width: 100%;
+		flex: 1 1 auto;
+		border-left: var(--main-border-style);
+		box-sizing: border-box;
+	}
+
+	@media only screen and (width>=688px) {
+		width: 600px;
+		flex: 0 0 auto;
+		border-right: var(--main-border-style);
+	}
+
+	@media only screen and (width>=988px) {
+		flex: 0 0 auto;
+	}
+}

@@ -1,0 +1,223 @@
+@use "../mixins";
+
+.tweet-area {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 181px;
+	margin: 0 0 0 0;
+	padding: 4px 16px 0 16px;
+	box-sizing: border-box;
+	border-bottom: var(--main-border-style);
+
+	&_wrapper {
+		display: flex;
+		width: 100%;
+		height: 100%;
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		height: 124px;
+	}
+
+	&_profile-image-box {
+		height: 100%;
+		width: 40px;
+		margin: 0 12px 0 0;
+		padding-top: 12px;
+
+		a {
+			width: fit-content;
+			min-height: 40px;
+			margin: 0;
+			padding: 0;
+		}
+	}
+
+	&_profile-img {
+		width: 40px;
+		height: 40px;
+		border-radius: 50%;
+	}
+
+	&_tweet-input {
+		appearance: none;
+		background-color: rgba(0, 0, 0, 0);
+		color: rgb(15, 20, 25);
+		width: 100%;
+		height: 124px;
+		display: block;
+		padding: 18px 0 0 2px;
+		box-sizing: border-box;
+		border: none;
+		font-size: 20px;
+		font-family: chirp;
+		font-weight: 400;
+		font-optical-sizing: auto;
+		resize: none;
+		outline: none;
+		font-feature-settings: normal;
+		font-kerning: auto;
+		font-stretch: 100%;
+		letter-spacing: normal;
+		text-rendering: auto;
+		text-shadow: none;
+		text-transform: none;
+		word-wrap: wrap;
+		line-height: normal;
+		overflow-wrap: break-word;
+	}
+
+	&_icons-row {
+		display: flex;
+		height: 52px;
+		margin: 0 0 0 52px;
+		padding: 0 0 0 2px;
+		justify-content: space-between;
+		box-sizing: border-box;
+	}
+
+	&_ul {
+		display: flex;
+		flex: 0 1 33%;
+		height: 100%;
+		margin: 0;
+		padding: 15px 0 0 0;
+		box-sizing: border-box;
+		list-style: none;
+	}
+
+	&_li {
+		@include mixins.hover-bg(50%, false, true);
+		display: flex;
+		height: 100%;
+		width: 36px;
+		justify-content: center;
+		align-items: center;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+	}
+
+	&_li--first-item {
+		margin-left: -8px;
+		font-family: chirp;
+		font-weight: bold;
+	}
+
+	&_li--light-icon {
+		@extend .tweet-area_li;
+		@include mixins.hover-bg(0, true);
+	}
+
+	&_anchors {
+		display: flex;
+		width: auto;
+		justify-content: start;
+	}
+
+	&_tweet-icons {
+		width: 20px;
+		aspect-ratio: 1/1;
+		margin: 0;
+		padding: 0;
+		fill: rgb(29, 155, 240);
+
+		&--light-icons {
+			@extend .tweet-area_tweet-icons;
+			fill: rgba(29, 155, 240, 0.5);
+		}
+	}
+
+	&_wrapper--btn {
+		display: flex;
+		width: 100%;
+		height: 100%;
+		margin: 0;
+		padding: 0;
+		flex: 0 1 33%;
+		max-width: 89.83px;
+		justify-content: end;
+		align-items: end;
+		margin-right: 2px;
+	}
+	&_pill-btn {
+		//@include hover-btn-bg();
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-family: chirp;
+		font-weight: bold;
+		font-size: 15px;
+		border-radius: 3rem;
+		width: 66.73px;
+		height: 36px;
+		color: rgb(255, 255, 255);
+		background-color: rgba(29, 155, 240, 0.5);
+		margin: 0;
+		padding: 2px 0 0 0;
+		border: none;
+	}
+
+	&_pill-btn-text {
+		display: inline-block;
+		color: rgb(255, 255, 255);
+	}
+}
+
+.tweet-area--shrunk {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 121px;
+	margin: 0 0 0 0;
+	padding: 4px 16px 0 16px;
+	box-sizing: border-box;
+	border-bottom: var(--main-border-style);
+
+	&_wrapper {
+		display: flex;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		height: fit-content;
+	}
+
+	&_tweet-input {
+		appearance: none;
+		background-color: rgba(0, 0, 0, 0);
+		color: rgb(15, 20, 25);
+		width: 100%;
+		height: 56px;
+		display: block;
+		padding: 20px 0 0 2px;
+		box-sizing: border-box;
+		border: none;
+		font-size: 20px;
+		font-family: chirp;
+		font-weight: 400;
+		font-optical-sizing: auto;
+		resize: none;
+		outline: none;
+		font-feature-settings: normal;
+		font-kerning: auto;
+		font-stretch: 100%;
+		letter-spacing: normal;
+		text-rendering: auto;
+		text-shadow: none;
+		text-transform: none;
+		word-wrap: wrap;
+		line-height: normal;
+		overflow-wrap: break-word;
+	}
+
+	&_icons-row {
+		display: flex;
+		height: 52px;
+		margin: 0 0 0 52px;
+		padding: 0 0 0 2px;
+		justify-content: space-between;
+		box-sizing: border-box;
+	}
+}

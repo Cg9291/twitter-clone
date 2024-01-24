@@ -1,2 +1,6 @@
 @use "./navigation/navigation";
-@use "variables"
+@use "./profile/profile";
+@use "./main-area/main-area.scss";
+@use "./main-area/header.scss";
+@use "./main-area/tweet-area";
+@use "variables";
