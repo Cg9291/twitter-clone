@@ -1,0 +1,50 @@
+.more-info {
+	display: none;
+	@media screen and (width>=988px) {
+		display: flex;
+		width: 288px;
+		height: 40px;
+		margin: 0 16px;
+		box-sizing: border-box;
+		flex-wrap: wrap;
+		row-gap: 5px;
+		&_elements {
+			display: flex;
+			align-items: center;
+			text-decoration: none;
+		}
+
+		&_elements:hover {
+			text-decoration: underline;
+			color: rgb(83, 100, 113);
+		}
+
+		&_text {
+			font-size: 13px;
+			font-weight: 400;
+			margin-right: 12px;
+			display: flex;
+			align-items: center;
+			color: rgb(83, 100, 113);
+		}
+
+		&_ellipsis {
+			width: 17px;
+			height: 13px;
+			margin-top: 2px;
+			padding: 3px 2px 0px 2px;
+			box-sizing: border-box;
+			display: flex;
+			align-items: center;
+			fill: rgb(83, 100, 113);
+
+			@media screen and (width>=988px) {
+				padding: 0px;
+			}
+		}
+	}
+
+	@media screen and (width>=1078px) {
+		width: 318px;
+	}
+}

@@ -3,4 +3,13 @@
 @use "./main-area/main-area.scss";
 @use "./main-area/header.scss";
 @use "./main-area/tweet-area";
+@use "./main-area/timeline";
+@use "./main-area/sidebar/sidebar";
+@use "./main-area/sidebar/searchBar";
+@use "./main-area/sidebar/get-verified";
+@use "./main-area/sidebar/subscribe-to-premium";
+@use "./main-area/sidebar/trending";
+@use "./main-area/sidebar/follow-recommendations";
+@use "./main-area/sidebar/more-info";
+@use "./wrappers";
 @use "variables";
