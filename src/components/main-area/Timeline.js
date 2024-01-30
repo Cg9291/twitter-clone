@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet"; //this allows to use helmet(which supports the insertion of script tags in the component's html)
+//import { Helmet } from "react-helmet"; //this allows to use helmet(which supports the insertion of script tags in the component's html)
 import React from "react";
 import TweetBox from "./Tweetbox.js";
 import TimelineBackup from "./TimelineBackup.js";
