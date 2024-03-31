@@ -1,5 +1,5 @@
 import "./App.scss";
-import React, { useState, useEffect, useLayoutEffect, useRef } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import Header from "./components/main-area/Header.js";
 import FollowsRecSection from "./components/sideBar/FollowRecsSection.js";
 import Navigation from "./components/navigation/Navigation.js";
@@ -44,12 +44,11 @@ Priority - Low:
 	*/
 
 function App() {
-	let scrollTracker = useRef();
+	const [prevScrollTopValue, setPrevScrollTopValue] = useState();
+	const [headerHeight, setHeaderHeight] = useState("-0.5px");
+	const [focusedLi, setFocusedLi] = useState(navListIcons);
 
-	let [prevScrollTopValue, setPrevScrollTopValue] = useState();
-	let [headerHeight, setHeaderHeight] = useState("-0.5px");
-
-	let [focusedLi, setFocusedLi] = useState(navListIcons);
+	const scrollTracker = useRef();
 
 	//EFFECTS
 

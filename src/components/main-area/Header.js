@@ -21,6 +21,7 @@ export default function Header(props) {
 						<img
 							className="header_profile-picture"
 							src="https://twirpz.files.wordpress.com/2015/06/twitter-avi-gender-balanced-figure.png?w=640"
+							alt="default profile pic"
 						/>
 					</div>
 				</div>
