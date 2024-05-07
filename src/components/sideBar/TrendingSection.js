@@ -15,12 +15,12 @@ export default function TrendingSection(props) {
 		},
 		{
 			category: "Business and Finance",
-			topic: "Carly's twitter clone",
+			topic: "Carl's twitter clone",
 			scope: "22k tweets",
 		},
 		{
 			category: "Uplifting News",
-			topic: "Carly's got a programmer Job",
+			topic: "Carl's got a programmer Job",
 			scope: "900k tweets",
 		},
 		{

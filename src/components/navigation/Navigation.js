@@ -38,6 +38,10 @@ export default function Navigation(props) {
 							classNames={"nav_li--search-icon"}
 						/>
 						<NavListItems
+							identifier="grokIcon"
+							label={"Grok"}
+						/>
+						<NavListItems
 							identifier="bellIcon"
 							label={"Notifications"}
 						/>
