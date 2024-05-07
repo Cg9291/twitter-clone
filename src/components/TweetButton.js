@@ -1,5 +1,5 @@
 import { SvgIcon } from "./SvgIcon.js";
-import { generalIcons } from "../objects/svgIcons.js";
+import { generalIcons } from "../objects/svg-icons.js";
 
 export default function TweetButton(props) {
 	return props.btn === "btn" ? (

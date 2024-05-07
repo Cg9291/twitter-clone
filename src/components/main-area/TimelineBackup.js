@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { SvgIcon } from "../SvgIcon";
-import { generalIcons, storeTweetStatsIcons } from "../../objects/svgIcons";
-import { tweetsArray } from "../../objects/tweetsArray";
+import { generalIcons, storeTweetStatsIcons } from "../../objects/svg-icons";
+import { tweetsArray } from "../../objects/tweets-array";
 
 export default function TimelineBackup() {
 	return (

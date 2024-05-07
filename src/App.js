@@ -1,16 +1,16 @@
 import "./App.scss";
 import React, { useState, useEffect, useRef } from "react";
 import Header from "./components/main-area/Header.js";
-import FollowsRecSection from "./components/sideBar/FollowRecsSection.js";
+import FollowsRecSection from "./components/sidebar/FollowRecsSection.js";
 import Navigation from "./components/navigation/Navigation.js";
-import SearchBar from "./components/sideBar/Searchbar.js";
+import SearchBar from "./components/sidebar/Searchbar.js";
 import Timeline from "./components/main-area/Timeline.js";
-import TrendingSection from "./components/sideBar/TrendingSection.js";
-import GetVerifiedSection from "./components/sideBar/GetVerifiedSection.js";
-import Profile from "./components/sideBar/Profile.js";
-import MoreInfoSection from "./components/sideBar/MoreInfoSection.js";
+import TrendingSection from "./components/sidebar/TrendingSection.js";
+import GetVerifiedSection from "./components/sidebar/GetVerifiedSection.js";
+import Profile from "./components/sidebar/Profile.js";
+import MoreInfoSection from "./components/sidebar/MoreInfoSection.js";
 import TweetBox from "./components/main-area/Tweetbox.js";
-import { navListIcons } from "./objects/svgIcons.js";
+import { navListIcons } from "./objects/svg-icons.js";
 
 /* TODO
 

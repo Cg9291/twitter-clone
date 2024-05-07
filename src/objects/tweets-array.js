@@ -1,5 +1,5 @@
-import { myProfilePicturesIndex } from "../assets/pictures/profile_pictures/index";
-import { myTweetPicturesIndex } from "../assets/pictures/tweet_pictures/index";
+import { myProfilePicturesIndex } from "../assets/pictures/profile-pictures/index";
+import { myTweetPicturesIndex } from "../assets/pictures/tweet-pictures/index";
 
 const {
 	apple_tv_pp,
